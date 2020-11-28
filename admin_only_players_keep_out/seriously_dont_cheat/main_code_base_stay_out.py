@@ -65,6 +65,9 @@ def level7():
     resp = input()
     if resp == "halp":
         return HELP
+    if resp == "halp2":
+        print("If you really insist. You'll have to check behind the frame of the picture and see if there's anything that doens't fit in...")
+        return FAIL
     if (resp == "HIDDEN_MEANINGS"): #SAH - need to update this pw depending on what picture we use
         return PASS
     else:

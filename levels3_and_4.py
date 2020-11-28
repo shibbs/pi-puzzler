@@ -2,7 +2,7 @@ FAIL = 0
 PASS = 1
 
 def level3():
-    print("Perhaps that one was too easy. This time you’ll have to do a bit of reverse engineering. Check out the file external_levels.py - it’s somewhere around here…")
+    print("Perhaps that one was too easy. This time you’ll have to do a bit of reverse engineering. Check out the file levels_3_and_4.py - it’s somewhere around here…")
     resp = input()
     if resp == "R3v3rs3_3ngin33r":
         return PASS

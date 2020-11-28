@@ -1,6 +1,6 @@
 import sys
 sys.path.insert(0, '../../')
-from external_levels import *
+from levels3_and_4 import *
 import os.path
 from os import path
 

@@ -1,7 +1,10 @@
 from external_levels import *
+import random
 
 FAIL = 0
 PASS = 1
+
+insults_array = ["Seriously!?", "I expected better", "This is going even worse than they said it would", "I'm a bit embarassed we're still doing this", "Weak_sauce", "N00B"]
 
 def level1():
     print('welcome to level 1. The password for this one is just n00b')
@@ -19,7 +22,7 @@ def level2():
     pw = f.readline()
     pw = pw.rstrip()
     f.close()
-    print(pw)
+    # print(pw)
     if resp == pw:
         return PASS
     else:
@@ -62,7 +65,9 @@ def level8():
         return FAIL
 
 def insult_generator():
-    return "Seriously!?"
+    index = len(insults_array)
+    index = random.randint(0, index-1)
+    return insults_array[index]
 
 def save_level(level_to_save):
     f = open("max_level.txt", "w")
@@ -71,7 +76,7 @@ def save_level(level_to_save):
     f.close()
 
 def leveln( level_num):
-    if(level_num == 1):
+    if(level_num <= 1):
         return level1()
     if(level_num == 2):
         return level2()
@@ -95,6 +100,9 @@ level = f.readline()
 f.close()
 level = int( level.rstrip() )
 print("Your current level is "+str(level))
+
+random.seed(None, 2)
+
 
 while 1==1 :
     if leveln(level) == PASS:

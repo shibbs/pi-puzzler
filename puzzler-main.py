@@ -37,32 +37,61 @@ def level4_local():
 def level5():
     print('That one was actually kind of tricky. Enough of that CS stuff, now let’s play with the command line a bit. If you poke around, there’s a file called “level5.png”. Turns out this thing can show pictures with a command called fbi... ')
     resp = input()
-    if (resp == "level5_pw"): #SAH - need to update this pw depending on what picture we use
+    if (resp == "IN_VISIBLE"):
         return PASS
     else:
         return FAIL
 def level6():
-    print("All right, nice work. This one is a bit trickier- there is a file around for this level but extensions aren't always what they seem")
+    print("Level 6, nice work. This one is a bit trickier- there is a file around for this level but extensions aren't always what they seem")
     resp = input()
-    if (resp == "bait_and_switch"): #SAH - need to update this pw depending on what picture we use
+    if (resp == "bait_and_switch"):
         return PASS
     else:
         return FAIL
 def level7():
-    print('This one is a bit funky. Turns out there are many ways to hide text in pictures- check out level7.png')
+    print("Welcome to Level 7. I won't pretend I'm not a little surprised to see you've made it this far This one is a bit funky, good luck")
     resp = input()
-    if (resp == "HELP_IM_TRAPPED_IN_THIS_PHOTO"): #SAH - need to update this pw depending on what picture we use
+    if (resp == "HIDDEN_MEANINGS"): #SAH - need to update this pw depending on what picture we use
         return PASS
     else:
         return FAIL
 def level8():
-    print("All right let's get multimedia in here. Turns out you can play audio files with these things...")
-# We need a level8.mp3 file to play
+    print("All right let's get multimedia up in this bitch. Turns out you can play audio files with these things...")
     resp = input()
-    if (resp == "mixmaster"): #SAH - need to update this pw depending on what audio file we create
+    if (resp == "bad_santa"):
         return PASS
     else:
         return FAIL
+def level9():
+    print("This level not yet built. Shame on the game master")
+    resp = input()
+    if (resp == "XX"):
+        return PASS
+    else:
+        return FAIL
+def level10():
+    print("This level not yet built. Shame on the game master")
+    resp = input()
+    if (resp == "XX"):
+        return PASS
+    else:
+        return FAIL
+def level11():
+    print("This level not yet built. Shame on the game master")
+    resp = input()
+    if (resp == "XX"):
+        return PASS
+    else:
+        return FAIL
+def level12():
+    print("This level not yet built. Shame on the game master")
+    resp = input()
+    if (resp == "XX"):
+        return PASS
+    else:
+        return FAIL
+
+
 
 def insult_generator():
     index = len(insults_array)
@@ -91,6 +120,14 @@ def leveln( level_num):
     if(level_num == 7):
         return level7()
     if(level_num == 8):
+        return level8()
+    if(level_num == 9):
+        return level8()
+    if(level_num == 10):
+        return level8()
+    if(level_num == 11):
+        return level8()
+    if(level_num == 12):
         return level8()
 
 

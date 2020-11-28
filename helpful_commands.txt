@@ -1,0 +1,16 @@
+Well hello there. This document is meant to provide some helpful commands to make moving around in the file system a bit easier.
+In the spirit of help, if you type in "halp" at any time our helpful HelpBot will give you a clue. Remember though ,this is meant to be puzzle, so don't ask for halp too much
+
+Also from time to time you may accidentally leave the game. If that happens, type in python3 run_this.py and the game will kick back off
+
+ls << Looks shows you all folders and files in the current directory
+
+cd << "Change directory".This lets you move around in the file system, but needs to be paired with where you want to go. Here are some examples:
+cd ../ << This will go "up" one level
+cd directory_to_enter << this will go into the folder directory_to_enter, assuming that it exists
+cd /   << this will go all the way to the highest level of the file system. Things may get a bit weird if you end up here
+A note on the file system: This game sits in a folder called pi-puzzler. If you're playing on a raspberry pi from Steve, it will sit at [Steve needs to fill this in]
+
+nano file_to_open  << nano is a useful tool for opening, creating, and editing files of all kinds as though they are text files. You can also edit files from within the nano editor. There are other editors out there that can be used, but nano is the most beginner friendly IMO
+
+There are many other commands that you'll need later on that let you create, delete, and move files, but you'll have to look that up yourself ;)

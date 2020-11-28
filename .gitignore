@@ -19,3 +19,6 @@ max_level.txt
 
 # temp python
 *.pyc
+
+magic_portal/*
+an_unfoldable_folder/*

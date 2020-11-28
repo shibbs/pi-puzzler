@@ -1,0 +1,21 @@
+#custom
+max_level.txt
+
+# Compiled Things
+*.o
+
+# Executeables
+*.exe
+
+# Outputs and ish
+*.swp
+*.avi
+*~
+*.log
+*.fig
+*.jpg
+*.mat
+*.out
+
+# temp python
+*.pyc

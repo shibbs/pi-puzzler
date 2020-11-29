@@ -13,4 +13,6 @@ A note on the file system: This game sits in a folder called pi-puzzler. If you'
 
 nano file_to_open  << nano is a useful tool for opening, creating, and editing files of all kinds as though they are text files. You can also edit files from within the nano editor. There are other editors out there that can be used, but nano is the most beginner friendly IMO
 
+pwd will show you the path to where you are currently located
+
 There are many other commands that you'll need later on that let you create, delete, and move files, but you'll have to look that up yourself ;)

@@ -1,7 +1,7 @@
 import sys
 sys.path.insert(0, '../../')
 from levels3_and_4 import *
-import os.path
+import os
 from os import path
 
 FAIL = 0
@@ -73,7 +73,7 @@ def level7():
     else:
         return FAIL
 def level8():
-    print("All right let's get multimedia up in this bitch. Turns out you can play audio files with these things...")
+    print("All right let's get multimedia up in here. Turns out you can play audio files with these things...")
     resp = input()
     if resp == "halp":
         return HELP
@@ -127,8 +127,95 @@ def level12():
     else:
         return PASS
 
+def level13():
+    print("All Right, time to shift gears a bit. For our next trick, you're going to need an internet connection. If you're playing from a raspberry pi, you'll have to look up the instructions online. Hit Enter when you're done, and we'll check that you have a legit internet connection")
+    resp = input()
+    if resp == "halp":
+        return HELP
+    stream = os.popen('echo Returned output')
+    output = stream.read()
+    print(output)
+    #if we have a failure we'll see something like ping: cannot resolve google.com: Unknown host
+    #if we have sucecss on mac it'll look like 64 bytes from 172.217.1.206: icmp_seq=0 ttl=115 time=10.008 ms
+    #if we have failure on linux it'll look like Time to live exceeded
 
+#FLAG SAH - Need to build this out and test it on the Pi, just gonna let it pass for now
+    return PASS
+    # if (output == "ping" ):#we just check if the folder got deleted
+    #     return PASS
+    # else:
+    #     return FAIL
 
+def level14():
+    print("All Right, we're gonna get a bit nerdy up in here. For this next task, you're going to have to run a piece of code. However to do so successfully you'll have to download a python library...")
+    resp = input()
+    if resp == "halp":
+        return HELP
+    if (resp == "2012-02-03 15:59:03" ):
+        return PASS
+    else:
+        return FAIL
+
+def level15():
+    print("Ok, for this next one you'll have to download and run a piece of code that isn't even on this machine. The code is sitting at https://github.com/shibbs/pi-puzzler-extra-repo.git ")
+    resp = input()
+    if resp == "halp":
+        return HELP
+    if (resp == "Some_ciphers_are_stronger_than_others-readme" ):
+        return PASS
+    else:
+        return FAIL
+def level16():
+    print("Ok, for this one we'll work from the code base you just used. Going forward you can also ditch the -readme bit now that we know you can read. Now decode the following for me: TdsjquLjuuz")
+    resp = input()
+    if resp == "halp":
+        return HELP
+    if (resp == "ScriptKitty" ):
+        return PASS
+    else:
+        return FAIL
+def level17():
+    print("All right, time to put this thing into reverse- encode this for me: FooBarFighters")
+    resp = input()
+    if resp == "halp":
+        return HELP
+    if (resp == "GppCbsGjhiufst" ):
+        return PASS
+    else:
+        return FAIL
+def level18():
+    print("Ok, so you know how to call pre-made functions, but can you edit the way the code works? Currently the Cipher changes the character used by a certain amount. Change that amount to 3 and decode: WkuhhvbFrpsdq|")
+    resp = input()
+    if resp == "halp":
+        return HELP
+    if (resp == "Threes_Company" ):
+        return PASS
+    else:
+        return FAIL
+def level19():
+    print("All right, it's time to take a bit of a computer break. Bust out some graph paper, and figure out what these files are trying to tell you")
+    resp = input()
+    if resp == "halp":
+        return HELP
+    if (resp == "SECRET" ):
+        return PASS
+    else:
+        return FAIL
+
+def level20():
+    print("Well I hope that was a refreshing little break. For this last trick, you'll have to cheat the game to escape. you are now allowed to enter the admin_only file, though be careful not to break the game completely!")
+    resp = input()
+    if resp == "halp":
+        return HELP
+    else:
+        return FAIL
+def level21():
+    print("Congratulations, you have broken free! However there may be a few other sneaky gremlins floating around that you may want to clean up...")
+    resp = input()
+    if resp == "halp":
+        return HELP
+    else:
+        return FAIL
 
 def leveln( level_num):
     if(level_num <= 1):
@@ -155,3 +242,21 @@ def leveln( level_num):
         return level11()
     if(level_num == 12):
         return level12()
+    if(level_num == 13):
+        return level13()
+    if(level_num == 14):
+        return level14()
+    if(level_num == 15):
+        return level15()
+    if(level_num == 16):
+        return level16()
+    if(level_num == 17):
+        return level17()
+    if(level_num == 18):
+        return level18()
+    if(level_num == 19):
+        return level19()
+    if(level_num == 20):
+        return level20()
+    if(level_num >= 21): #NOTE This currently assumes 21 is the last level. If we add levels, pulle the Greater than!
+        return level21()

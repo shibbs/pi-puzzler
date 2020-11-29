@@ -1,0 +1,8 @@
+to reset the game:
+
+
+level9 - clear out the answer in the why_is_it_called_a_folder_if_I_cant_fold_it/level9.txt
+level10 - delete an_unfoldable_folder/level10.txt
+level11 - delete the magic_portal folder if it is around still
+Level13 - break the wifi connection
+Level 14  pip3 uninstall times

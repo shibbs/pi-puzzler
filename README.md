@@ -11,3 +11,4 @@ Hide/encrypt the max_level.txt file somehow
 Obfuscate/compile the puzzeler-main file, or stop hiding passwords in cleartext somehow
 finish all of the levels, obviously
 Add more insults, obviously
+build a checker into level13

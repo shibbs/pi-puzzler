@@ -3,7 +3,7 @@ In the spirit of help, if you type in "halp" at any time our helpful HelpBot wil
 
 Also from time to time you may accidentally leave the game. If that happens, type in python3 run_this.py and the game will kick back off
 
-ls << Looks shows you all folders and files in the current directory
+ls << type this in and hit enter. shows you all folders and files in the current directory
 
 cd << "Change directory".This lets you move around in the file system, but needs to be paired with where you want to go. Here are some examples:
 cd ../ << This will go "up" one level

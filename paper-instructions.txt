@@ -1,0 +1,27 @@
+This puzzle box is set up on a raspberry pi computer. This is a type of computer that is small, cheap, and pretty underpowered. But what it doesn't give in performance, it doesn't cost in dollars!
+The raspberry pi is a very flexible system, and in this case it is running and operating system called Raspbian. Raspbian is a version of linux designed to work with the raspberry pi and to be beginner friendly. And linux is an operating system, like Windows or Mac OS. Phones even have operating systems, like iOS for iphones and Android (which is actually built on linux as well)
+Another fun fact is that MacOS and Linux are both built upon a super old operating system called UNIX, so they're kind of like cousins, and all the tricks that you'll learn for the pi will work on any linux computer, and many will work on macs as well. Windows is tricker but there are ways to set up linux-like terminals on a windows computer as well
+
+In doing this puzzle box you will have to navigate what is known as the linux command line. This is a very basic form of UI that allows you to move around in the file system, but doesn't have a fancy GUI (graphical user interface). Linux can have quite a nice UI, but to make this exercise maximally intersting and educational i have disabled the GUI on the device that I'm sending you. You can turn it on later once the puzzle's done, using your newf0und skillz.
+
+In order to use this puzzle box you will need the raspbery pi, the micro sd card that is already installed (that is the hard drive basically), a USB power supply rated to 5V 1A at least, a USB micro cable to plug into the usb micro port of the pi, and a monitor with an HDMI cable to connect this to your monitor
+
+This puzzle box is meant to teach you some cool tricks, but to even use it you'll need to know a few things:
+- When you boot up the machine it will automatically log into a terminal session that is running the puzzle program. You will enter the password for each level into that command prompt, and you can type in "halp" to get some (hopefully useful) advise. You can also text me if you're stuck
+- The default window that you will see on boot up is not really a linux terminal prompt because everything you send in is looked at by my program as though it is looking for a password. In order to move around inside the computer you will need to get to a normal command prompt. To do this you will need to press alt+[left or right arrow] at the same time. This will move you around between the different available terminals. There are 6 but you only need 2.
+- When you're in a new terminal it will say "raspberrypi login:". the login is "pi" and the password is "steveissupercool". Obviously this is the only password that can be set on these machines, there's no use trying to change it...
+- Once in the terminal you see a blinking cursor, which means you're in the matrix! However where are you?
+- If you type in pwd it will show you where you are in the file system. In this case it will be /home/pi
+- If you want to see all the folders in the folder that you are in, type in "ls"
+- If you want to get to the folder where the game and game files are located type in cd Documents
+- Once here type in ls and you will see what folders are available. I leave it up to the reader how to get into the game folder from here...
+
+Some other notes:
+- Linux, just like any OS, has a bunch of default programs in it that can do things like open text files, open video files, etc. I have also loaded up a few useful programs that you will need in order to complete your journey. They are:
+nano - this will open a text file. Once in the game directory, if you type in nano helpful_commands.txt you will open a text file that I have already made for you that houses some useful helpful commands. To leave nano type ctrl+x. There are many other cool commands nano can do if you check the internet
+python3 - this command will run a python file that is in your directory. if you type in python3 run_this.py from the main game directory it will run the game!
+the tab button is very helpful. For instance if you type in nano help and then hit tab, it will autocomplete the file name for you!
+There is a program called fbi that opens images
+There is a program called omxplayer that can play mp3 files. Though you may need to look around at some documentation online to get it working with your setup :)
+
+Eventually you will need to set up an internet connection, but at the start you do not need anything that's not already on the box

@@ -20,7 +20,7 @@ def level1():
 
 def level2():
     print('Welcome to level 2. This is where things start to get a bit techy. I recommend that for the rest of this puzzle you have a phone or computer on the side to help you look up the linux commands necessary to navigate within our little world. Also, this window will not let you move around in the file system, so you will need a normal command line prompt to actually solve most of these puzzles')
-    print("The password for this one is hanging out in a file called level2.txt. I recommend checking out nano, like whatever that is AIMRITE!?")
+    print("The password for this one is hanging out in a file called level2.txt. I recommend checking out nano, like whatever that is AMIRITE!?")
     resp = input()
     if resp == "halp":
         return HELP
@@ -66,7 +66,7 @@ def level7():
     if resp == "halp":
         return HELP
     if resp == "halp2":
-        print("If you really insist. You'll have to check behind the frame of the picture and see if there's anything that doens't fit in...")
+        print("If you really insist. This file is a valid png image, but just  because it works doesn't meant that data can't otherwise be hidden inside the file...")
         return FAIL
     if (resp == "HIDDEN_MEANINGS"): #SAH - need to update this pw depending on what picture we use
         return PASS

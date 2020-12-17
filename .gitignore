@@ -1,5 +1,5 @@
 #custom
-max_level.txt
+#max_level.txt
 
 # Compiled Things
 *.o
@@ -21,4 +21,4 @@ max_level.txt
 *.pyc
 
 magic_portal/*
-an_unfoldable_folder/*
+an_unfoldable_folder/level10.txt

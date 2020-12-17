@@ -25,3 +25,5 @@ There is a program called fbi that opens images
 There is a program called omxplayer that can play mp3 files. Though you may need to look around at some documentation online to get it working with your setup :)
 
 Eventually you will need to set up an internet connection, but at the start you do not need anything that's not already on the box
+
+to shutdown responsibly, always type in shutdown now

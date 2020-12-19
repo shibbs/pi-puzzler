@@ -6,6 +6,8 @@ In doing this puzzle box you will have to navigate what is known as the linux co
 
 In order to use this puzzle box you will need the raspbery pi, the micro sd card that is already installed (that is the hard drive basically), a USB power supply rated to 5V 1A at least, a USB micro cable to plug into the usb micro port of the pi, and a monitor with an HDMI cable to connect this to your monitor
 
+Every time you start up, you will be given a command line prompt. type in "python3 run_this.py" to start the game
+
 This puzzle box is meant to teach you some cool tricks, but to even use it you'll need to know a few things:
 - When you boot up the machine it will automatically log into a terminal session that is running the puzzle program. You will enter the password for each level into that command prompt, and you can type in "halp" to get some (hopefully useful) advise. You can also text me if you're stuck
 - The default window that you will see on boot up is not really a linux terminal prompt because everything you send in is looked at by my program as though it is looking for a password. In order to move around inside the computer you will need to get to a normal command prompt. To do this you will need to press alt+[left or right arrow] at the same time. This will move you around between the different available terminals. There are 6 but you only need 2.

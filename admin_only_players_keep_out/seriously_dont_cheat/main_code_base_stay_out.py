@@ -1,4 +1,5 @@
 import sys
+from urllib.request import urlopen
 sys.path.insert(0, '../../')
 from levels3_and_4 import *
 import os
@@ -132,25 +133,21 @@ def level13():
     resp = input()
     if resp == "halp":
         return HELP
-    stream = os.popen('echo Returned output')
-    output = stream.read()
-    print(output)
-    #if we have a failure we'll see something like ping: cannot resolve google.com: Unknown host
-    #if we have sucecss on mac it'll look like 64 bytes from 172.217.1.206: icmp_seq=0 ttl=115 time=10.008 ms
-    #if we have failure on linux it'll look like Time to live exceeded
 
-#FLAG SAH - Need to build this out and test it on the Pi, just gonna let it pass for now
-    return PASS
-    # if (output == "ping" ):#we just check if the folder got deleted
-    #     return PASS
-    # else:
-    #     return FAIL
+    try:
+        response = urlopen('https://www.google.com/', timeout=10)
+        return PASS
+    except:
+        return FAIL
 
 def level14():
     print("All Right, we're gonna get a bit nerdy up in here. For this next task, you're going to have to run a piece of code. However to do so successfully you'll have to download a python library...")
     resp = input()
     if resp == "halp":
         return HELP
+    if resp =="halp2":
+        print("There's a command called pip3 that installs dependencies. This time it looks like there's a missing module called times")
+        return FAIL
     if (resp == "2012-02-03 15:59:03" ):
         return PASS
     else:
@@ -166,7 +163,7 @@ def level15():
     else:
         return FAIL
 def level16():
-    print("Ok, for this one we'll work from the code base you just used. Going forward you can also ditch the -readme bit now that we know you can read. Now decode the following for me: TdsjquLjuuz")
+    print("Ok, for this one we'll work from the code base you just used. Now decode the following for me: TdsjquLjuuz")
     resp = input()
     if resp == "halp":
         return HELP
@@ -210,7 +207,7 @@ def level20():
     else:
         return FAIL
 def level21():
-    print("Congratulations, you have broken free! However there may be a few other sneaky gremlins floating around that you may want to clean up...")
+    print("Congratulations, you have broken free! Here are some things you should look at: \n -Why does this always welcome you to the thunderdome on bootup?\n -Why does it always boot into the game directory, is that normal?\n is there a way to get a GUI on this?\n PicoCTF is pretty cool if you dug the puzzle levels")
     resp = input()
     if resp == "halp":
         return HELP

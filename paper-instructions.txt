@@ -20,6 +20,7 @@ This puzzle box is meant to teach you some cool tricks, but to even use it you'l
 
 Some other notes:
 - Linux, just like any OS, has a bunch of default programs in it that can do things like open text files, open video files, etc. I have also loaded up a few useful programs that you will need in order to complete your journey. They are:
+- Every time you want to turn it off, type in "sudo shutdown now" 
 nano - this will open a text file. Once in the game directory, if you type in nano helpful_commands.txt you will open a text file that I have already made for you that houses some useful helpful commands. To leave nano type ctrl+x. There are many other cool commands nano can do if you check the internet
 python3 - this command will run a python file that is in your directory. if you type in python3 run_this.py from the main game directory it will run the game!
 the tab button is very helpful. For instance if you type in nano help and then hit tab, it will autocomplete the file name for you!

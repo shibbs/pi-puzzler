@@ -23,6 +23,7 @@ Some other notes:
 nano - this will open a text file. Once in the game directory, if you type in nano helpful_commands.txt you will open a text file that I have already made for you that houses some useful helpful commands. To leave nano type ctrl+x. There are many other cool commands nano can do if you check the internet
 python3 - this command will run a python file that is in your directory. if you type in python3 run_this.py from the main game directory it will run the game!
 the tab button is very helpful. For instance if you type in nano help and then hit tab, it will autocomplete the file name for you!
+if you hit the up arrow in the terminal it will let you scroll through the last commands you used
 There is a program called fbi that opens images
 There is a program called omxplayer that can play mp3 files. Though you may need to look around at some documentation online to get it working with your setup :)
 
